@@ -20,10 +20,8 @@ class Student
   def add_student_attributes(attributes_hash)
     @@all.each do |student|
       attributes_hash.each do |k, v|
-        student.send("#{k}=" v
-      
-      
-      
+        student.send("#{k}=", v)
+      end
     end
     self 
   end
